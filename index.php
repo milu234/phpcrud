@@ -1,5 +1,14 @@
 <?php
 include 'db.php';
+if(isset($_POST['bt-insert']))
+{
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+    $address = $_POST['address'];
+    $hobby = implode(",",$_POST['hobby']); //In this case the hobby is an array
+
+}
 
 ?>
 
